@@ -77,7 +77,9 @@ g++ main.cpp -licuuc -licuio -o main
 ```
 
 O arquivo main do programa recebe dois parametros de linha de comando, um indicando qual o dicionário escolhido (AVL, Rubro-Negra, Chained Hash Table ou Open Addressing Hash Table) e o outro com o nome do arquivo .txt escolhido para contar as frequências. O padrão utilizado para essas entradas foi:
-
+<div align="center">
+<img width="400" height="auto" alt="t1" src="https://github.com/user-attachments/assets/99b97b74-cef7-41cb-b3b7-5ec4405c13e1" />
+</div>
 
 ### :bulb: Documentação
 Para uma compreensão aprofundada sobre as decisões de projeto, conclusões, testes executados e sanar dúvidas ou curiosidades, o **[relatório técnico](./relatorio.pdf)** do projeto está disponível para consulta.
