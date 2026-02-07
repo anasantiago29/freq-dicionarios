@@ -66,17 +66,23 @@ Diferente do encadeamento, esta tabela busca por outra posição livre diretamen
 
 ## :rocket: Como Compilar e Executar
 
-### :clipboard: Pré-requisitos
-Você precisará de um compilador C++ instalado (como o `g++`) para processar a interface principal.
+### 📋 Pré-requisitos
+* **Ambiente Linux**: O projeto utiliza bibliotecas como a `Unicode (ICU)`, que possuem dependências nativas do Linux. Caso esteja no Windows, é necessário utilizar o **WSL (Windows Subsystem for Linux)**.
+* **Compilador**: Você precisará do `g++` instalado no seu ambiente Linux/WSL.
+* **Bibliotecas ICU**: Certifique-se de ter as bibliotecas de desenvolvimento do ICU instaladas (no Ubuntu/Debian: `sudo apt-get install libicu-dev`).
 
-### :hammer_and_pick: Compilação e execução
-Para compilar o projeto, abra o terminal na pasta raiz e execute o comando abaixo:
+### ⚒️ Compilação e Execução
+Para compilar o projeto, abra o terminal na pasta raiz e execute o comando abaixo, que realiza a linkagem com as bibliotecas Unicode:
 
 ```
 g++ main.cpp -licuuc -licuio -o main
 ```
 
-O arquivo main do programa recebe dois parametros de linha de comando, um indicando qual o dicionário escolhido (AVL, Rubro-Negra, Chained Hash Table ou Open Addressing Hash Table) e o outro com o nome do arquivo .txt escolhido para contar as frequências. O padrão utilizado para essas entradas foi:
+O arquivo `main` do programa recebe dois parametros via linha de comando:
+1. **Dicionário**: Estrutura escolhida (AVL, Rubro-Negra, Chained Hash Table ou Open Addressing Hash Table).
+2. **Arquivo**: Nome do arquivo `.txt` escolhido para contar as frequências.
+
+O padrão utilizado para essas entradas segue o formato abaixo:
 <div align="center">
 <img width="400" height="auto" alt="t1" src="https://github.com/user-attachments/assets/99b97b74-cef7-41cb-b3b7-5ec4405c13e1" />
 </div>
